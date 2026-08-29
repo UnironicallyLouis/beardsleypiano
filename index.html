@@ -249,6 +249,76 @@
     font-weight:500;
   }
 
+  /* About section */
+  .about-photos{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:14px;
+    margin-top:8px;
+  }
+  .about-photos img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:4px;
+    display:block;
+  }
+  .about-text{
+    max-width:60ch;
+    margin:0 auto 36px;
+    text-align:center;
+    color:var(--ivory-dim);
+    font-size:1.05rem;
+    line-height:1.7;
+  }
+  .insta-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:24px;
+    color:var(--wine-light);
+    font-family:'Cormorant',serif;
+    font-style:italic;
+    font-size:1.15rem;
+    border-bottom:1px solid var(--wine-light);
+  }
+  @media (max-width: 640px){
+    .about-photos{grid-template-columns:1fr;}
+    .about-photos img{height:240px;}
+  }
+
+  /* Watch/video */
+  .watch{
+    background:var(--lacquer-2);
+  }
+  .video-placeholder{
+    max-width:640px;
+    margin:0 auto;
+    aspect-ratio:16/9;
+    border:1px dashed var(--line);
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--ivory-dim);
+    font-family:'Cormorant',serif;
+    font-style:italic;
+    font-size:1.1rem;
+  }
+  .video-embed{
+    max-width:640px;
+    margin:0 auto;
+    aspect-ratio:16/9;
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .video-embed iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+  }
+
   /* Quote */
   .quote{
     text-align:center;
@@ -367,6 +437,26 @@
   </div>
 </section>
 
+<section class="occasions">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">The man at the piano</span>
+      <h2>About Stephen</h2>
+    </div>
+    <p class="about-text">
+      Stephen has spent a lifetime around music and the arts. Alongside performing, he's a working artist — the same eye for mood and detail goes into every set he plays. Warm, easy company at any event, he's as comfortable in a grand country house as a quiet village hall.
+    </p>
+    <div class="about-photos">
+      <img src="images/stephen-1.jpg" alt="Stephen" onerror="this.style.display='none';">
+      <img src="images/stephen-2.jpg" alt="Stephen" onerror="this.style.display='none';">
+      <img src="images/stephen-3.jpg" alt="Stephen" onerror="this.style.display='none';">
+    </div>
+    <div style="text-align:center;">
+      <a class="insta-link" href="https://www.instagram.com/beardsley_prints" target="_blank" rel="noopener">See his artwork on Instagram →</a>
+    </div>
+  </div>
+</section>
+
 <section class="repertoire">
   <div class="wrap">
     <div class="section-head">
@@ -409,12 +499,24 @@
       <h2>Good to know</h2>
     </div>
     <ul>
-      <li><span>Instrument</span> <strong>Own digital grand, full weighted keys</strong></li>
-      <li><span>Setup</span> <strong>Self-contained, no venue piano needed</strong></li>
+      <li><span>Instrument</span> <strong>Full-size electric keyboard &amp; PA, or your venue's piano</strong></li>
+      <li><span>Setup</span> <strong>Self-contained — everything supplied, or plays in-house</strong></li>
       <li><span>Typical booking</span> <strong>1–4 hours</strong></li>
-      <li><span>Travel</span> <strong>Within 60 miles of Brighton, further by arrangement</strong></li>
+      <li><span>Travel</span> <strong>Within 60 miles, further by arrangement</strong></li>
       <li><span>Booking window</span> <strong>Best 6+ months ahead for weekends</strong></li>
     </ul>
+  </div>
+</section>
+
+<section class="watch">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">See him play</span>
+      <h2>Watch &amp; listen</h2>
+    </div>
+    <div class="video-placeholder">
+      <p>Performance videos coming soon.</p>
+    </div>
   </div>
 </section>
 
