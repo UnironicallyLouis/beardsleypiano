@@ -4,27 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stephen Beardsley — Wedding &amp; Event Pianist</title>
-<meta name="description" content="Live piano for weddings, ceremonies and private events. Solo grand piano performance, all genres, booking now.">
+<meta name="description" content="Live piano and vocals for wedding receptions, dinners and private events across the South East. Elegant music from the Great American Songbook to modern standards.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Cormorant:ital@1&display=swap" rel="stylesheet">
 <style>
   :root{
-    --lacquer: #14100e;
-    --lacquer-2: #1c1815;
-    --ivory: #f2ead9;
-    --ivory-dim: #cfc4ac;
-    --wine: #7a3030;
-    --wine-light: #a4514f;
-    --line: #33291f;
+    --cream: #faf6f0;
+    --cream-2: #f2ebe1;
+    --blush: #e8d3d1;
+    --blush-deep: #c99a9a;
+    --sage: #b8c4b0;
+    --sage-deep: #8a9d80;
+    --plum: #4a3b45;
+    --plum-soft: #6d5c68;
+    --gold: #c9a875;
+    --line: #e2d8ca;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
 
   body{
-    background:var(--lacquer);
-    color:var(--ivory);
+    background:var(--cream);
+    color:var(--plum);
     font-family:'Work Sans',sans-serif;
     line-height:1.6;
   }
@@ -33,13 +36,14 @@
     font-family:'Fraunces',serif;
     font-weight:500;
     letter-spacing:-0.01em;
+    color:var(--plum);
   }
 
   .accent-italic{
     font-family:'Cormorant',serif;
     font-style:italic;
     font-weight:400;
-    color:var(--wine-light);
+    color:var(--blush-deep);
   }
 
   a{color:inherit;text-decoration:none;}
@@ -56,20 +60,22 @@
     height:22px;
     width:100%;
     overflow:hidden;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
   }
   .keys span{
     flex:1;
-    border-right:1px solid var(--lacquer);
+    border-right:1px solid var(--line);
   }
   .keys span:nth-child(1),
   .keys span:nth-child(4),
   .keys span:nth-child(6),
   .keys span:nth-child(9),
   .keys span:nth-child(11){
-    background:var(--lacquer-2);
+    background:var(--plum);
   }
   .keys span:not(:nth-child(1)):not(:nth-child(4)):not(:nth-child(6)):not(:nth-child(9)):not(:nth-child(11)){
-    background:var(--ivory);
+    background:#fff;
   }
 
   /* Header */
@@ -90,7 +96,7 @@
   }
   .brand em{
     font-style:italic;
-    color:var(--wine-light);
+    color:var(--blush-deep);
   }
   .nav-call{
     border:1px solid var(--line);
@@ -101,8 +107,8 @@
     transition:border-color 0.2s ease, color 0.2s ease;
   }
   .nav-call:hover{
-    border-color:var(--wine-light);
-    color:var(--wine-light);
+    border-color:var(--blush-deep);
+    color:var(--blush-deep);
   }
 
   /* Hero */
@@ -113,7 +119,7 @@
   .eyebrow{
     font-family:'Cormorant',serif;
     font-style:italic;
-    color:var(--wine-light);
+    color:var(--blush-deep);
     font-size:1.2rem;
     margin-bottom:22px;
   }
@@ -124,7 +130,7 @@
     margin:0 auto 24px;
   }
   .hero p.lede{
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:1.1rem;
     max-width:44ch;
     margin:0 auto 40px;
@@ -147,8 +153,8 @@
     transition:transform 0.15s ease, opacity 0.15s ease;
   }
   .btn-primary{
-    background:var(--ivory);
-    color:var(--lacquer);
+    background:var(--plum);
+    color:var(--cream);
   }
   .btn-primary:hover{
     transform:translateY(-2px);
@@ -156,11 +162,11 @@
   }
   .btn-ghost{
     border:1px solid var(--line);
-    color:var(--ivory);
+    color:var(--plum);
   }
   .btn-ghost:hover{
-    border-color:var(--wine-light);
-    color:var(--wine-light);
+    border-color:var(--blush-deep);
+    color:var(--blush-deep);
   }
 
   /* Section shared */
@@ -174,7 +180,7 @@
   .tag{
     font-family:'Cormorant',serif;
     font-style:italic;
-    color:var(--wine-light);
+    color:var(--blush-deep);
     font-size:1.15rem;
     display:block;
     margin-bottom:10px;
@@ -197,13 +203,13 @@
     margin-bottom:12px;
   }
   .service p{
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:0.96rem;
   }
 
   /* Repertoire — styled like a printed program */
   .repertoire{
-    background:var(--lacquer-2);
+    background:var(--cream-2);
   }
   .program{
     max-width:640px;
@@ -226,7 +232,7 @@
   .program-row .genre{
     font-family:'Cormorant',serif;
     font-style:italic;
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:1rem;
     white-space:nowrap;
   }
@@ -242,10 +248,10 @@
     justify-content:space-between;
     padding:14px 0;
     border-bottom:1px solid var(--line);
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
   }
   .occasions li strong{
-    color:var(--ivory);
+    color:var(--plum);
     font-weight:500;
   }
 
@@ -267,7 +273,7 @@
     max-width:60ch;
     margin:0 auto 36px;
     text-align:center;
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:1.05rem;
     line-height:1.7;
   }
@@ -276,11 +282,11 @@
     align-items:center;
     gap:8px;
     margin-top:24px;
-    color:var(--wine-light);
+    color:var(--blush-deep);
     font-family:'Cormorant',serif;
     font-style:italic;
     font-size:1.15rem;
-    border-bottom:1px solid var(--wine-light);
+    border-bottom:1px solid var(--blush-deep);
   }
   @media (max-width: 640px){
     .about-photos{grid-template-columns:1fr;}
@@ -289,7 +295,7 @@
 
   /* Watch/video */
   .watch{
-    background:var(--lacquer-2);
+    background:var(--cream-2);
   }
   .video-placeholder{
     max-width:640px;
@@ -300,7 +306,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-family:'Cormorant',serif;
     font-style:italic;
     font-size:1.1rem;
@@ -322,6 +328,9 @@
   /* Quote */
   .quote{
     text-align:center;
+    background:var(--blush);
+    padding-top:76px;
+    padding-bottom:76px;
   }
   .quote blockquote{
     font-family:'Fraunces',serif;
@@ -330,10 +339,11 @@
     max-width:36ch;
     margin:0 auto 18px;
     line-height:1.4;
+    color:var(--plum);
   }
   .quote cite{
     font-style:normal;
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:0.9rem;
     letter-spacing:0.05em;
   }
@@ -347,7 +357,7 @@
     margin-bottom:16px;
   }
   .contact p{
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     margin-bottom:40px;
     max-width:40ch;
     margin-left:auto;
@@ -362,20 +372,20 @@
   .big-phone{
     font-family:'Fraunces',serif;
     font-size:clamp(1.8rem,4.5vw,2.6rem);
-    color:var(--ivory);
+    color:var(--plum);
   }
-  .big-phone:hover{color:var(--wine-light);}
+  .big-phone:hover{color:var(--blush-deep);}
   .email-link{
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:0.98rem;
-    border-bottom:1px dotted var(--ivory-dim);
+    border-bottom:1px dotted var(--plum-soft);
   }
-  .email-link:hover{color:var(--ivory);}
+  .email-link:hover{color:var(--plum);}
 
   footer{
     padding:30px 0;
     text-align:center;
-    color:var(--ivory-dim);
+    color:var(--plum-soft);
     font-size:0.85rem;
   }
 
@@ -396,9 +406,9 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">Live piano, without the fuss</div>
-    <h1>Music for the moments<br>that call for a real piano.</h1>
-    <p class="lede">Solo grand piano performance for wedding ceremonies, receptions and private events — 20 years playing rooms like yours.</p>
+    <div class="eyebrow">Live piano &amp; vocals for your celebration</div>
+    <h1>Music for the moments<br>that call for live piano.</h1>
+    <p class="lede">Elegant solo piano — with vocals if you'd like them — for wedding receptions, dinners and private events across the South East.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="tel:+447305641500">Call to check a date</a>
       <a class="btn btn-ghost" href="mailto:stephen@beardsleypiano.co.uk">Email enquiry</a>
@@ -418,20 +428,20 @@
     </div>
     <div class="service-grid">
       <div class="service">
-        <h3>Ceremony</h3>
-        <p>Prelude, processional, signing of the register, recessional — timed exactly to your order of service.</p>
+        <h3>Drinks Reception</h3>
+        <p>Warm, unobtrusive piano while your guests arrive and mingle — setting the tone before the evening begins.</p>
       </div>
       <div class="service">
-        <h3>Cocktail Hour</h3>
-        <p>Warm, unobtrusive background piano while your guests mingle between ceremony and reception.</p>
+        <h3>Wedding Breakfast</h3>
+        <p>Elegant dinner music through the meal, from the Great American Songbook to gentle modern favourites.</p>
       </div>
       <div class="service">
-        <h3>Reception</h3>
-        <p>Dinner music through to first dance — song requests welcome, arranged for solo piano.</p>
+        <h3>Evening Reception</h3>
+        <p>Lift the room as the celebration builds — piano alone, or piano with vocals if you'd like a song or two.</p>
       </div>
       <div class="service">
         <h3>Private &amp; Corporate</h3>
-        <p>Galas, dinners, retirements and private parties. Any room, any occasion that wants real music.</p>
+        <p>Dinners, anniversaries, retirements and private parties. Any occasion with an ear for something tasteful.</p>
       </div>
     </div>
   </div>
@@ -460,33 +470,33 @@
 <section class="repertoire">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">A sample of the program</span>
+      <span class="tag">A sense of the evening</span>
       <h2>Repertoire</h2>
     </div>
     <div class="program">
       <div class="program-row">
-        <span class="piece">Clair de Lune</span>
-        <span class="genre">Classical</span>
+        <span class="piece">The Great American Songbook</span>
+        <span class="genre">Gershwin, Porter, Berlin</span>
       </div>
       <div class="program-row">
-        <span class="piece">Perfect</span>
-        <span class="genre">Contemporary</span>
+        <span class="piece">Jazz Classics &amp; Standards</span>
+        <span class="genre">Sinatra to Nat King Cole</span>
       </div>
       <div class="program-row">
-        <span class="piece">Fly Me to the Moon</span>
-        <span class="genre">Jazz Standard</span>
+        <span class="piece">Modern Standards</span>
+        <span class="genre">Timeless, tastefully arranged</span>
       </div>
       <div class="program-row">
-        <span class="piece">Canon in D</span>
-        <span class="genre">Classical</span>
+        <span class="piece">Songs to Sing Along To</span>
+        <span class="genre">The ones everyone loves</span>
       </div>
       <div class="program-row">
-        <span class="piece">A Thousand Years</span>
-        <span class="genre">Contemporary</span>
+        <span class="piece">A Little Country &amp; Folk</span>
+        <span class="genre">Warm and easy-going</span>
       </div>
       <div class="program-row">
-        <span class="piece">Your first dance song</span>
-        <span class="genre">By request</span>
+        <span class="piece">Requests &amp; Favourites</span>
+        <span class="genre">Your special songs, by arrangement</span>
       </div>
     </div>
   </div>
@@ -499,10 +509,10 @@
       <h2>Good to know</h2>
     </div>
     <ul>
-      <li><span>Instrument</span> <strong>Full-size electric keyboard &amp; PA, or your venue's piano</strong></li>
-      <li><span>Setup</span> <strong>Self-contained — everything supplied, or plays in-house</strong></li>
+      <li><span>Instrument</span> <strong>Full 88-note stage pianos, professional PA &amp; amplification — or your venue's piano</strong></li>
+      <li><span>Format</span> <strong>Solo piano, or piano with vocals</strong></li>
       <li><span>Typical booking</span> <strong>1–4 hours</strong></li>
-      <li><span>Travel</span> <strong>Within 60 miles, further by arrangement</strong></li>
+      <li><span>Covering</span> <strong>Across the South East</strong></li>
       <li><span>Booking window</span> <strong>Best 6+ months ahead for weekends</strong></li>
     </ul>
   </div>
@@ -522,7 +532,7 @@
 
 <section class="quote">
   <div class="wrap">
-    <blockquote>"Guests were still talking about the piano during the ceremony weeks later. Exactly right, every moment."</blockquote>
+    <blockquote>"Guests were still talking about the piano weeks after the reception. Exactly right, every moment."</blockquote>
     <cite>— A recent wedding client</cite>
   </div>
 </section>
