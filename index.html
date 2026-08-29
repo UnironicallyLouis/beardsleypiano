@@ -10,16 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Cormorant:ital@1&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream: #faf6f0;
-    --cream-2: #f2ebe1;
-    --blush: #e8d3d1;
-    --blush-deep: #c99a9a;
-    --sage: #b8c4b0;
+    --cream: #14100e;
+    --cream-2: #1c1815;
+    --blush: #1c1815;
+    --blush-deep: #a4514f;
+    --sage: #1c1815;
     --sage-deep: #8a9d80;
-    --plum: #4a3b45;
-    --plum-soft: #6d5c68;
+    --plum: #f2ead9;
+    --plum-soft: #cfc4ac;
     --gold: #c9a875;
-    --line: #e2d8ca;
+    --line: #33291f;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -167,6 +167,40 @@
   .btn-ghost:hover{
     border-color:var(--blush-deep);
     color:var(--blush-deep);
+  }
+
+  /* Philosophy / the performer */
+  .philosophy{
+    background:var(--sage);
+    text-align:center;
+  }
+  .philosophy .wrap{
+    max-width:760px;
+  }
+  .philosophy .lead-in{
+    font-family:'Cormorant',serif;
+    font-style:italic;
+    color:var(--plum);
+    font-size:1.3rem;
+    margin-bottom:20px;
+  }
+  .philosophy h2{
+    font-size:clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom:24px;
+    line-height:1.2;
+  }
+  .philosophy p{
+    color:var(--plum);
+    font-size:1.12rem;
+    line-height:1.75;
+    max-width:56ch;
+    margin:0 auto 18px;
+  }
+  .philosophy p:last-child{margin-bottom:0;}
+  .philosophy .emphasis{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.2rem;
   }
 
   /* Section shared */
@@ -408,11 +442,25 @@
   <div class="wrap">
     <div class="eyebrow">Live piano &amp; vocals for your celebration</div>
     <h1>Music for the moments<br>that call for live piano.</h1>
-    <p class="lede">Elegant solo piano — with vocals if you'd like them — for wedding receptions, dinners and private events across the South East.</p>
+    <p class="lede">Live solo piano — with vocals if required — for wedding receptions, dinners and private events across the South East.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="tel:+447305641500">Call to check a date</a>
       <a class="btn btn-ghost" href="mailto:stephen@beardsleypiano.co.uk">Email enquiry</a>
     </div>
+  </div>
+</section>
+
+<div class="keys">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<section class="philosophy">
+  <div class="wrap">
+    <div class="lead-in">More than notes on a page</div>
+    <h2>A performer, not just a pianist</h2>
+    <p>Plenty of pianists are technically flawless and yet leave a room cold — perfectly played, but somehow you feel nothing. Stephen is a different sort of musician.</p>
+    <p>He reads a room, draws people in and plays <em>to</em> them, not merely in front of them. There's warmth in how he performs and how he connects — the kind that makes guests look up, listen, and feel something.</p>
+    <p class="emphasis">That connection is the difference between background music and a moment people remember.</p>
   </div>
 </section>
 
@@ -515,18 +563,6 @@
       <li><span>Covering</span> <strong>Across the South East</strong></li>
       <li><span>Booking window</span> <strong>Best 6+ months ahead for weekends</strong></li>
     </ul>
-  </div>
-</section>
-
-<section class="watch">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="tag">See him play</span>
-      <h2>Watch &amp; listen</h2>
-    </div>
-    <div class="video-placeholder">
-      <p>Performance videos coming soon.</p>
-    </div>
   </div>
 </section>
 
